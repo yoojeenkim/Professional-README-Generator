@@ -43,9 +43,10 @@ function init() {
                 name: 'description'
             },
             {
-                type: 'input',
+                type: 'rawlist',
                 message: questions[4],
-                name: 'license'
+                name: 'license',
+                choices: ['MIT', 'Apache', 'GPLv2', 'GPLv3']
             },
             {
                 type: 'input',
