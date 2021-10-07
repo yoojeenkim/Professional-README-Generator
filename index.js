@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
+const fs = require('fs');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -16,7 +17,13 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    const readmeContent = generateMarkdown(data);
+    
+    fs.writeFile(fileName, readmeContent, (err) =>
+    err ? console.log(err) : console.log('Successfully created readme file!')
+    );
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -25,17 +32,17 @@ function init() {
             {
                 type: 'input',
                 message: questions[0],
-                name: 'github-username'
+                name: 'githubusername'
             },
             {
                 type: 'input',
                 message: questions[1],
-                name: 'email-address'
+                name: 'emailaddress'
             },
             {
                 type: 'input',
                 message: questions[2],
-                name: 'project-name'
+                name: 'projectname'
             },
             {
                 type: 'input',
@@ -61,17 +68,17 @@ function init() {
             {
                 type: 'input',
                 message: questions[7],
-                name: 'using-repo'
+                name: 'usingrepo'
             },
             {
                 type: 'input',
                 message: questions[8],
-                name: 'contribute-to-repo'
+                name: 'contributetorepo'
             },
 
         ])
         .then((response) =>
-            console.log(response)
+            writeToFile('README.md', response)
         );
 }
 
