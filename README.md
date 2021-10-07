@@ -3,9 +3,11 @@
 
 
 ## Description
-As a developer, I wanted to generate professional READMEs without having to go through the hassle of writing out the template every time. Also, Paul said it is good practice to write READMEs and I don't want to be scolded by Paul. Provided is a link to a video demonstrating the use of this README generator.
+As a developer, I wanted to generate professional READMEs without having to go through the hassle of writing out the template every time. Also, Paul said it is good practice to write READMEs and I don't want to be scolded by Paul.
 
 ## Walkthrough
+Provided is a link to a video demonstrating the use of this README generator.
+
 [Video Demonstration](https://drive.google.com/file/d/1dEBVWVHb6nzrmVOi-6C8YYH00cmk45gN/view?usp=sharing)
 
 ## Table of Contents
