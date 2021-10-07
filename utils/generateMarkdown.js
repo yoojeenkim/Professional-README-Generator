@@ -40,15 +40,15 @@ function renderLicenseSection(license) {
 
   switch (license) {
     case 'MIT':
-      return `[![License: MIT]${licenseBadge}]${licenseLink}`;
+      return `is covered under the [![License: MIT]${licenseBadge}]${licenseLink}`;
     case 'Apache 2.0':
-      return `[![License]${licenseBadge}]${licenseLink}`;
+      return `is covered under the [![License]${licenseBadge}]${licenseLink}`;
     case 'GPLv3':
-      return `[![License: GPL v3]${licenseBadge}]${licenseLink}`;
+      return `is covered under the [![License: GPL v3]${licenseBadge}]${licenseLink}`;
     case 'BSD 3':
-      return `[![License]${licenseBadge}]${licenseLink}`;
+      return `is covered under the [![License]${licenseBadge}]${licenseLink}`;
     default:
-      return '';
+      return `does not have a`;
   }
 }
 
@@ -79,7 +79,7 @@ ${data.dependencies}.
 ${data.usingrepo}.
 
 ## License
-This application is covered under the ${data.license} license.
+This application ${data.license} license.
 
 ## Contributing
 ${data.contributetorepo}.
