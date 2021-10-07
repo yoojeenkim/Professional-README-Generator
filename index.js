@@ -53,7 +53,7 @@ function init() {
                 type: 'rawlist',
                 message: questions[4],
                 name: 'license',
-                choices: ['MIT', 'Apache', 'GPLv2', 'GPLv3']
+                choices: ['MIT', 'Apache 2.0', 'GPLv3', 'BSD 3', 'None']
             },
             {
                 type: 'input',
